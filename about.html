@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Register</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="home.html">Shoes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="{{url_for('home')}}">Home<span class="sr-only">current</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('about')}}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{{url_for('browse')}}">Browse<span class="sr-only">current</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{{url_for('search')}}">Search<span class="sr-only">current</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{{url_for('upload')}}">Upload attraction<span class="sr-only">current</span></a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+
+<h1 style = "text-align:center;margin-top:3%;font-size:50px">
+  <p class="text-secondary">About</p>
+  </h1>
+    <p style = "text-align:center;margin-left:40px;margin-right:40px;font-size:23px">Patronus' features and how  to use them</p>
+
+
+<!--
+<div class = "row" style = "margin-top:60px;margin-left:40px">  
+<div class="card col-sm-3" style="margin-left:80px; margin-right: 60px;height:60%">
+  <img src="images/cardlogin.svg" class="card-img-top" alt="..." style = "margin-top:38px">
+  <div class="card-body">
+    <div style = "margin-top:20px"></div>
+    <h5 class="card-title">Log-in/Registration</h5>
+    <p class="card-text">Upon creating an account, users' responses to the forms will be stored in a database. Registration consists of four steps, including the user's first and last name, e-mail address and phone number, birthdate, username, and password. </p>
+    <a href="login.html" class="btn btn-primary">Log in</a>
+    <a href="signUp.html" class="btn btn-secondary">Registration</a>
+</div>
+</div>
+<div class="card col-sm-3" style= "margin-right:60px;height:60%">
+  <img src="images/carddash.svg" class="card-img-top" alt="..." style = "margin-top:32px">
+  <div class="card-body">
+    <h5 class="card-title">Classes/Pods/Temperature</h5>
+    <p class="card-text">After signing in, users can create pods by inputting the names and grade of their fellow classmates/groupmates into a form. If students wish to travel to each other's houses, mainting social distancing, of course, everyone will be required to log their temperatures. The entire pod's temperatures will be put on display on the dashboard. Additionally, students  can  deliver information amongst each other by writing the main class focus. Users can also fill out  a to-do form for students to log the activities  they need to finish. All the data will be stored and saved. </p>
+    <a href="dashboard.html" class="btn btn-primary">Dashboard</a>
+</div>
+</div>
+<div class="card col-sm-3" style= "margin-right:60px ">
+  <img src="images/cardtutor.svg" class="card-img-top" alt="..." style = "height:200px;margin-top:30px">
+  <div class="card-body">
+    <h5 class="card-title">Find a Tutor</h5>
+    <p class="card-text">steps here</p>
+    <a href="#" class="btn btn-primary">Tutors</a>
+</div>
+</div>
+-->
+
+
+<img src = "images/about1.svg" style = "width:45%;margin-left:5%;margin-top:6%">
+<h1 style = "float:right;margin-right:5%; size: 40px;margin-top:80px;margin-right:250px">How to use Patronus</h1>
+<p style = "float:right; margin-top:-280px;margin-left:825px;margin-right:40px;size:20px">Upon creating an account, users' responses to the forms will be stored in a database. Registration consists of four steps, including the user's first and last name, email address and phone number, birthdate, username, and password. After signing in, users can create pods by inputting the names and grade of their fellow classmates/groupmates into a form. If students wish to travel to each other's houses, mainting social distancing, of course, everyone will be required to log their temperatures. The entire pod's temperatures will be put on display on the dashboard. Additionally, students can deliver information amongst each other by writing the main class focus. Users can also fill out a to-do form for students to log the activities they need to finish. All the data will be stored and saved.</p>
+<img src = "images/about2.svg" style = "width:45%;margin-right:5%;margin-top:100px;float:right;">
+<h1 style = "margin-left:50%;margin-left:5%;margin-top:5%;margin-right:-200px;float:right;margin-right:50px">Why use Patronus?</h1>
+<p style = "text-align: right;size: 20px; margin-right:53%;margin-left:6%;margin-top:150px">According to the NY Times, pods are in demand and there is no safe way to create them. With Patronus we enable a way for families of all background to create in person or online pods that help guranteee safety with temperature tracking and help find resources such as tutors and online help! Patronus is motivational and adaptable to any educational needs that students may have and bridges the gaps causes by distance learning. Patronus many features offers a safe and easily-accessible way to learn at your own pace. Studying physically at school is too  dangerous, but some believe that opting  for online schooling will slow down their children’s studying rate. Using Patronus, parents and students will be assured safe and organized learning by using the customizable to-do lists, group studying formers, and temperature loggers.</p>
+  </body>
+</html>

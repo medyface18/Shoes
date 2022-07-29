@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="home.html">Shoes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home<span class="sr-only">current</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('about')}}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{{url_for('browse')}}">Browse<span class="sr-only">current</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{{url_for('search')}}">Search<span class="sr-only">current</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{{url_for('upload')}}">Upload attraction<span class="sr-only">current</span></a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+
+<!--<image src= "images/banner.png" style= "width:100%;position:absolute"></image>-->
+
+<h1 style = "text-align:center;margin-top:44%;font-size:30px">
+  <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor in porttitor. Q</p>
+  </h1>
+    <p style = "text-align:center;margin-left:40px;margin-right:40px;font-size:25px">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor in porttitor. Quisque euismod a ex in scelerisque. Ut in eros sit amet felis sodales lobortis sit amet in augue. Sed congue nulla eu nibh dictum, aliquet posuere massa dictum. Sed mattis euismod malesuada. Curabitur vel lectus quis neque scelerisque faucibus eget et sapien. Praesent est nulla, gravida a nunc et, ornare sagittis tortor.
+
+Phasellus viverra finibus lacus a suscipit. Phasellus eget iaculis quam. Etiam dolor nisl, vehicula ut velit gravida, ultricies facilisis eros. Cras mi est, cursus non viverra eget, tincidunt non ex. Curabitur euismod tincidunt vulputate. Nullam tincidunt orci quis felis suscipit fermentum. Sed pharetra sapien ac leo faucibus viverra. Nulla nec felis condimentum, varius eros et, sagittis tortor.</p>
+
+
+  <h1>This is the Index page</h1>
+<form action="{{ url_for('gfg')}}" method="post">
+<label for="firstname">First Name:</label>
+<input type="text" id="firstname" name="fname" placeholder="firstname">
+<label for="lastname">Last Name:</label>
+<input type="text" id="lastname" name="lname" placeholder="lastname">
+<label for="lastname">Middle Name:</label>
+<input type="text" id="middlename" name="mname" placeholder="lastname">
+<button type="submit">Login</button>
+</form>
+<!--
+<div class = "row" style = "margin-top:60px;margin-left:40px">
+<div class="card col-sm-3" style="margin-left:80px; margin-right: 60px;height:60%">
+  <img src="images/cardlogin.svg" class="card-img-top" alt="..." style = "margin-top:38px">
+  <div class="card-body">
+    <div style = "margin-top:20px"></div>
+    <h5 class="card-title">Login/Sign up</h5>
+    <p class="card-text">Log in to access and make comments. Feel free to sign up!</p>
+    <a href="login.html" class="btn btn-primary">Log in</a>
+    <a href="signUp.html" class="btn btn-secondary">Sign up</a>
+</div>
+</div>
+<div class="card col-sm-3" style= "margin-right:60px;height:60%">
+  <img src="images/carddash.svg" class="card-img-top" alt="..." style = "margin-top:32px">
+  <div class="card-body">
+    <h5 class="card-title">Search</h5>
+    <p class="card-text">View attraction near you.</p>
+
+
+
+    <a href="dashboard.html" class="btn btn-primary">Dashboard</a>
+</div>
+</div>
+<div class="card col-sm-3" style= "margin-right:60px ">
+  <img src="images/cardtutor.svg" class="card-img-top" alt="..." style = "height:200px;margin-top:30px">
+  <div class="card-body">
+    <h5 class="card-title">Browser</h5>
+    <p class="card-text">Scan t</p>
+
+    <a href="#" class="btn btn-primary">Tutors</a>
+</div>
+</div>
+
+
+
+<div  style = "margin-left: auto;margin-right:auto;margin-top:40px;width:80%" >
+<div class="jumbotron">
+  <h1 class="display-4">
+
+<style>
+  svg{
+  font: bold 30px 'Libre Franklin', sans-serif;
+  width: 100%;
+  height: 120px;
+}
+
+text{
+  fill: none;
+  stroke: black;
+  stroke-width:0.5px;
+  // stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+  animation: 2s pulsate infinite;
+}
+
+@keyframes pulsate {
+  50%{ stroke-width:2px; }
+}
+</style>
+<svg viewBox="0 0 450 50" >
+  <text y="40">THE PROBLEM</text>
+</svg>
+
+
+  </h1>
+  <p class="lead">Why did we make Patronus?</p>
+  <hr class="my-4">
+  <p>As a result of the coronavirus, learning centers, such as after-school academies and schools, have been unable to have their students be physically present. This has changed many aspects of students' learning lives. The change of environments and new rules against face-to-face meeting puts people with learning disabilities at a disadvantage because they are not able to get the attention they need. Even those in big groups are not able advance in their education. With Patronus, team ASTRA hopes to give everyone the chance to form group organized group studies with their friends while maintaining COVID regulations and being healthy.</p>
+  <a class="btn btn-outline-primary btn-lg" href="about.html" role="button">Learn more</a>
+</div>
+
+
+
+
+
+<div class="jumbotron">
+  <h1 class="display-4">
+
+<style>
+  svg{
+  font: bold 30px 'Libre Franklin', sans-serif;
+  width: 100%;
+  height: 120px;
+}
+
+text{
+  fill: none;
+  stroke: black;
+  stroke-width:0.5px;
+  // stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+  animation: 2s pulsate infinite;
+}
+
+@keyframes pulsate {
+  50%{ stroke-width:2px; }
+}
+</style>
+<svg viewBox="0 0 450 50">
+  <text y="40">THE GOAL</text>
+</svg>
+
+
+  </h1>
+  <p class="lead">What is our solution to the problem?</p>
+  <hr class="my-4">
+  <p>We want to help students be able to gain additional support with their academic ventures by creating pods and suggesting tutors. In a time where people's personal problems may take away from their ability to focus on work, Patronus offers a simple way for te the Additionally, Patronus has a temperature-logging feature which urges students to keep track of their health. According to NY Times, the pod will provide their kids with a predictable schedule and structure, which they hope will make the children feel anchored and safe. </p>
+  <a class="btn btn-outline-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+</div>https://Khadija.medhan21.repl.co
+
+
+
+<div class="row">
+  <div class="col-sm-6" style = "margin-top:10%">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">The Problem</h5>
+        <p class="card-text">As a result of the coronavirus, learning centers, such as after-school academies and schools, have been unable to have their students be physically present. This has changed many aspects of students' learning lives. The change of environments and new rules against face-to-face meeting puts people with learning disabilities at a disadvantage because they are not able to get the attention they need. Even those in big groups are not able to advanced in their educationWith Patronus, team ASTRA hopes to give everyone the chance to form group organized group studies with their friends while maintaining COVID regulations and being healthy. </p>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6" style = "margin-top:10%" style = "margin-right=10%">
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Our Goal</h5>
+        <p style class="card-text">We want to help students be able to gain additional support with their academic ventures by creating pods and suggesting tutors. In a time where people's personal problems may take away from their ability to focus on work, Patronus offers a simple way for te the Additionally, Patronus has a temperature-logging feature which urges students to keep track of their health.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+</div>
+
+
+</div>
+-->
+  </body>
+</html>
+
