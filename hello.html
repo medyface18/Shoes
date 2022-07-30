@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello!</h1>
+<p>{p2:}, {p1:}!</p>
+<p>{p3:}, {p4:}!</p>
+<p>{p5:}, {p6:}!</p>
+<p>{p7:}, {p8:}!</p>
+
+<form action="{{url_for('sendingRatings')}}" method="post">
+<label for="firstname">Access1:</label>
+<input type="text" id="firstname" name="fname" placeholder="firstname">
+<label for="lastname">Access2:</label>
+<input type="text" id="lastname" name="lname" placeholder="lastname">
+<label for="lastname">Access3:</label>
+<input type="text" id="middlename" name="mname" placeholder="lastname">
+<label for="lastname">Access4:</label>
+<input type="text" id="middlename1" name="mname1" placeholder="lastname">
+<button type="submit">Accept rating</button>
+</form>
+
+</body>
+</html>

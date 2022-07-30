@@ -40,22 +40,22 @@
 
       <table border = 1>
          <thead>
+            <td>ID</td>
             <td>Name</td>
-            <td>Name</td>
-            <td>Address>/td<
-            <td>city</td>
-            <td>Pincode</td>
-            <td>Pincode</td>
+            <td>Location</td>
+            <td>Category</td>
+            <td>Hours</td>
+
          </thead>
 
          {% for row in rows %}
             <tr>
                <td>{{row["ID"]}}</td>
+                <td>{{row['Name']}}</td>
                <td>{{row["Location"]}}</td>
-               <td> {{ row["Access1"]}}</td>
-               <td>{{row['Access2']}}</td>
-                <td>{{row['Access3']}}</td>
-                <td>{{row['Access4']}}</td>
+               <td> {{ row["Category"]}}</td>
+               <td>{{row['Hours']}}</td>
+
             </tr>
          {% endfor %}
       </table>
@@ -64,6 +64,14 @@
   </h1>
     <p style = "text-align:center;margin-left:40px;margin-right:40px;font-size:23px">Patronus' features and how  to use them</p>
 
+
+
+<form action="{{ url_for('findRatings')}}" method="post">
+<label for="firstname">Attraction name:</label>
+<input type="text" id="firstname" name="fname" placeholder="firstname">
+
+<button type="submit">Login</button>
+</form>
 
 <!--
 <div class = "row" style = "margin-top:60px;margin-left:40px">  

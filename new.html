@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+      <table border = 1>
+         <thead>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Location</td>
+            <td>Category</td>
+            <td>Hours</td>
+
+
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["ID"]}}</td>
+                 <td>{{row['Name']}}</td>
+               <td>{{row["Location"]}}</td>
+               <td> {{ row["Category"]}}</td>
+               <td>{{row['Hours']}}</td>
+
+            </tr>
+         {% endfor %}
+      </table>
+
+
+<form action="{{ url_for('findRatings')}}" method="post">
+<label for="firstname">Attraction ID:</label>
+<input type="text" id="firstname" name="fname" placeholder="firstname">
+
+<button type="submit">Login</button>
+</form>
+</body>
+</html>
