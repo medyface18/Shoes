@@ -1,0 +1,159 @@
+body {
+  margin:40px;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+/*
+input {
+  display:block;
+  width:100%;
+  margin:10px 0;
+  padding:10px;
+}
+*/
+.type-1 {
+  border-radius:10px;
+  border: 1px solid #eee;
+  transition: .3s border-color;
+}
+.type-1:hover {
+  border: 1px solid #aaa;
+}
+
+.type-2 {
+  background-color: #fafafa;
+  border:0;
+  box-shadow:0 0 4px rgba(0,0,0,0.3);
+  transition: .3s box-shadow;
+}
+.type-2:hover {
+  box-shadow:0 0 4px rgba(0,0,0,0.5);
+}
+.type-3 {
+  border:1px solid #111;
+  transition: .3s background-color;
+}
+.type-3:hover {
+  background-color: #fafafa;
+}
+
+
+table {
+  width: 100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td,  th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+ tr:nth-child(even){background-color: #f2f2f2;}
+
+ tr:hover {background-color: #ddd;}
+
+ th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0275d8;
+  color: white;
+}
+
+#Progress_Status { 
+  float:right;
+  width: 50%; 
+  background-color: #ddd; 
+} 
+  
+#myprogressBar { 
+  float:right;
+  width: 70%; 
+  height: 25px; 
+  background-color: #42c5f5; 
+  text-align: center; 
+  line-height: 32px; 
+  color: black; 
+}
+
+#myprogressBar2 { 
+  float:right;
+  width: 30%; 
+  height: 25px; 
+  background-color: #42c5f5; 
+  text-align: center; 
+  line-height: 32px; 
+  color: black; 
+}
+
+#myprogressBar3 { 
+  float:right;
+  width: 10%; 
+  height: 25px; 
+  background-color: #42c5f5; 
+  text-align: center; 
+  line-height: 32px; 
+  color: black; 
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
