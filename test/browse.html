@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <h1 style = "text-align:center">Browse the Website</h1>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Register</title>
@@ -64,7 +65,7 @@
       -->
   <!-- action="{{ url_for('findRatings')}}" -->
 <form  method="post">
-<label for="firstname">Enter the ID of the location you want to view accessibility ratings and rate:</label>
+<label for="firstname" style="text-align:center;margin-left:40px">Enter the ID of the location you want to view accessibility ratings and rate:</label>
 <input type="text" id="firstname" name="fname" placeholder="Enter ID">
 
 <button type="submit">Submit</button>
@@ -73,11 +74,13 @@
     <!--{% for row in rows %}-->
 <div class="jumbotron">
   <h1 class="display-4">
-  <text y="40">{{row['name']}}</text>
+  <text y="40">Attraction: {{row['name']}}</text>
   </h1>
-  <p class="lead">ID:{{row['ID']}}</p>
+  <p class="lead">ID: {{row['ID']}}</p>
   <hr class="my-4">
-  <p>Location: {{row["Location"]}}, Category: {{ row["Category"]}}, Hours:{{row['Hours']}}</p>
+  <p>Location: {{row["Location"]}}</p>
+  <p>Category: {{ row["Category"]}}</p>
+  <p>Open Hours: {{row['Hours']}}</p>
 
 </div>
   <!--{% endfor %}-->

@@ -41,26 +41,33 @@
     <h1 style="margin-left:10px", class="display4">Ratings for {{p8}}, ID: {{ID}}</h1>
 <div style="margin-left:20px", class="jumbotron">
 
-<p>rating2: {{p2}}, rating1: {{p1}}</p>
-<p>rating3: {{p3}}, rating4: {{p4}}</p>
-<p>category: {{p6}}, location: {{p5}}</p>
-<p>hours:{{p7}}</p>
+<p>Accessibility: {{p2}}</p>
+<p>Service: {{p1}}</p>
+<p>Parking: {{p3}}</p>
+<p>Friendliness: {{p4}}</p>
+<p>Category: {{p6}}</p>
+<p>Location: {{p5}}</p>
+<p>Open Hours:{{p7}}</p>
 </div>
 
      <h1 style="margin-left:10px", class="display4">Add your own ratings for {{p8}}, ID: {{ID}}</h1>
   <div style="margin-left:20px", class="jumbotron">
     <!-- action="{{url_for('sendingRatings')}}" -->
 <form  method="post">
-<label for="firstname">Access1:</label>
-<input type="text" id="firstname" name="fname" placeholder="firstname">
-<label for="lastname">Access2:</label>
-<input type="text" id="lastname" name="lname" placeholder="lastname">
-<label for="lastname">Access3:</label>
-<input type="text" id="middlename" name="mname" placeholder="lastname">
-<label for="lastname">Access4:</label>
-<input type="text" id="middlename1" name="mname1" placeholder="lastname">
-<label for="lastname">Comments:</label>
-<input type="text" id="middlename2" name="mname2" placeholder="lastname">
+<label for="firstname">Accessibility:</label>
+<input type="text" id="firstname" name="fname" placeholder="Rating for Accessibility">
+    <br>
+    <label for="lastname">Service:</label>
+<input type="text" id="lastname" name="lname" placeholder="Rating for Service">
+    <br>
+    <label for="lastname">Parking:</label>
+<input type="text" id="middlename" name="mname" placeholder="Rating for Parking">
+    <br>
+    <label for="lastname">Friendliness:</label>
+<input type="text" id="middlename1" name="mname1" placeholder="Rating for Friendliness">
+    <br>
+    <label for="lastname">Add Your Comments:</label>
+<input type="text" id="middlename2" name="mname2" placeholder="comments">
 <button type="submit", , class="btn btn-outline-primary btn-lg">Submit rating</button>
 </form>
 </div>

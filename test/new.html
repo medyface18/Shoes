@@ -63,14 +63,17 @@
       </table>
       -->
   <h1 class="display-4">
-  <text y="40">RESULTS OF YOUR QUERY</text>
+  <text y="40" style="text-align:center; text-align:left;margin-left:40px">RESULTS OF YOUR QUERY</text>
   </h1>
-    <!-- action="{{ url_for('findRatings')}}"-->
+    <!--
+     action="{{ url_for('findRatings')}}"
+    -->
 <form  method="post">
-<label for="firstname">Attraction ID:</label>
-<input type="text" id="firstname" name="fname" placeholder="firstname">
-
-<button type="submit", , class="btn btn-outline-primary btn-lg">Login</button>
+  <b>
+<label for="firstname" style="text-align:center; font-family:Verdana, sans-serif; text-align:left;margin-left:40px">Attraction ID:</label>
+<input type="text" id="firstname" name="fname" placeholder="attraction id">
+  </b>
+<button type="submit", class="btn btn-outline-primary btn-lg">Login</button>
 </form>
 <div  style = "margin-left: auto;margin-right:auto;margin-top:40px;width:80%" >
     <!--{% for row in rows %}-->
@@ -80,7 +83,16 @@
   </h1>
   <p class="lead">{{row['ID']}}</p>
   <hr class="my-4">
-  <p>{{row["Location"]}}, {{ row["Category"]}}, {{row['Hours']}}As a result of the coronavirus, learning centers, such as after-school academies and schools, have been unable to have their students be physically present. This has changed many aspects of students' learning lives. The change of environments and new rules against face-to-face meeting puts people with learning disabilities at a disadvantage because they are not able to get the attention they need. Even those in big groups are not able advance in their education. With Patronus, team ASTRA hopes to give everyone the chance to form group organized group studies with their friends while maintaining COVID regulations and being healthy.</p>
+  <p>Location: {{row["Location"]}}</p>
+  <p>Category: {{ row["Category"]}}</p>
+  <p>Open Hours: {{row['Hours']}}</p>
+  <p>
+    As a result of the coronavirus, learning centers, such as after-school academies and schools, have been unable to have their
+    students be physically present. This has changed many aspects of students' learning lives. The change of environments and new
+    rules against face-to-face meeting puts people with learning disabilities at a disadvantage because they are not able to get
+    the attention they need. Even those in big groups are not able advance in their education. With Patronus, team ASTRA hopes to give
+    everyone the chance to form group organized group studies with their friends while maintaining COVID regulations and being healthy.
+  </p>
   <a class="btn btn-outline-primary btn-lg" href="about.html" role="button">Learn more</a>
 </div>
   <!--{% endfor %}-->
@@ -116,4 +128,4 @@
     <a href="#" class="btn btn-primary">Tutors</a>
 </div>
 </div>
--->
+  -->
