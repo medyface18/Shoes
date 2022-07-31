@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Hello!</h1>
-<p>{{p2}}, {{p1}}!</p>
-<p>{{p3}}, {{p4}}!</p>
-<p>{{p6}}, {{p5}}!</p>
-<p>{{p7}}, {{p8}}!</p>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Register</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body >
+    <script src="script.js"></script>
 
-<form action="{{url_for('sendingRatings')}}" method="post">
+<!--
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="home.html">Shoes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="{{url_for('home')}}">Home<span class="sr-only">current</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('about')}}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{{url_for('browse')}}">Browse<span class="sr-only">current</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{{url_for('search')}}">Search<span class="sr-only">current</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{{url_for('upload')}}">Upload attraction<span class="sr-only">current</span></a>
+
+
+    </ul>
+  </div>
+</nav>
+-->
+    <h1 style="margin-left:10px", class="display4">Ratings for {{p8}}, ID: {{ID}}</h1>
+<div style="margin-left:20px", class="jumbotron">
+
+<p>rating2: {{p2}}, rating1: {{p1}}</p>
+<p>rating3: {{p3}}, rating4: {{p4}}</p>
+<p>category: {{p6}}, location: {{p5}}</p>
+<p>hours:{{p7}}</p>
+</div>
+
+     <h1 style="margin-left:10px", class="display4">Add your own ratings for {{p8}}, ID: {{ID}}</h1>
+  <div style="margin-left:20px", class="jumbotron">
+    <!-- action="{{url_for('sendingRatings')}}" -->
+<form  method="post">
 <label for="firstname">Access1:</label>
 <input type="text" id="firstname" name="fname" placeholder="firstname">
 <label for="lastname">Access2:</label>
@@ -20,8 +59,30 @@
 <input type="text" id="middlename" name="mname" placeholder="lastname">
 <label for="lastname">Access4:</label>
 <input type="text" id="middlename1" name="mname1" placeholder="lastname">
-<button type="submit">Accept rating</button>
+<label for="lastname">Comments:</label>
+<input type="text" id="middlename2" name="mname2" placeholder="lastname">
+<button type="submit", , class="btn btn-outline-primary btn-lg">Submit rating</button>
 </form>
+</div>
 
+     <h1 style="margin-left:10px", class="display4">Comments about the accessibility of {{p8}}, ID: {{ID}}</h1>
+<div style="margin-left:20px", class="jumbotron">
+<!--{% for row in rows %}-->
+<div class="row">
+  <div class="col-sm-6" style = "margin-top:10%">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Comment</h5>
+        <p class="card-text">{{row['Comments']}}</p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<!--{% endfor %}-->
+</div>
+
+  </div>
 </body>
 </html>
